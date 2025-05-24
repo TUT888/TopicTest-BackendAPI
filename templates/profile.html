@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Profile</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background-color: #f4f4f4; }
+        h2 { color: #333; }
+        p { font-size: 18px; color: #555; }
+        .container { max-width: 80%; width: fit-content; margin: 0 auto; padding: 20px; background-color: white; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        a { color: #007BFF; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center; ">User profile</h1>
+        <table>
+            <tr>
+                <td><h2 style="text-decoration: underline">Name:</h2></td>
+                <td><h2>&nbsp;&nbsp; {{ name }}</h2></td>
+            </tr>
+            <tr>
+                <td><h2 style="text-decoration: underline">Total questions completed:</h2></td>
+                <td><h2 style="color: #007BFF;">&nbsp;&nbsp; {{ completed }}</h2></td>
+            </tr>
+            <tr>
+                <td><h2 style="text-decoration: underline">Total correctly answer:</h2></td>
+                <td><h2 style="color: #008000;">&nbsp;&nbsp; {{ correct }}</h2></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

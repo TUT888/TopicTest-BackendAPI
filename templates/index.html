@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Notes</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { color: #333; }
+        .note { border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; }
+        .note h3 { margin: 0 0 5px; }
+        .note p { margin: 0; }
+    </style>
+</head>
+<body>
+    <h1>List of Notes</h1>
+    {% for note in notes %}
+    <div class="note">
+        <h3>{{ note.title }}</h3>
+        <p><strong>Category:</strong> {{ note.category }}</p>
+        <p>{{ note.content }}</p>
+    </div>
+    {% endfor %}
+    {% if not notes %}
+    <p>No notes found.</p>
+    {% endif %}
+    <p><a href="/">Back to Welcome Page</a></p>
+</body>
+</html>
