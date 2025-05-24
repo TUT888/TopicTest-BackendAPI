@@ -296,6 +296,16 @@ def get_all_tasks():
     except Exception as e:
         return jsonify({"error": f"Failed to get task data: {str(e)}"}), 400
 
+@app.route("/tasks/<id>", methods=["DELETE"])
+def delete_task(id):
+    try:
+        result = mongo.db.tasks.delete_one({"_id": ObjectId(id)})
+        if result.deleted_count:
+            return jsonify({"message": "Task deleted successfully"}), 200
+        return jsonify({"error": "Task not found"}), 404
+    except Exception as e:
+        return jsonify({"error": f"Failed to delete task: {str(e)}"}), 400
+    
 # Launch server
 if __name__ == '__main__':
     port_num = 5000
