@@ -1,7 +1,5 @@
 # Backend API for Mobile Application
-Backend API source code for Task 10.1D, **extended from** [Task 6.1D - Backend](https://github.com/alice-tat/Task6_1D_BackendAPI)
-
-This backend API **support the Android Application** at [Task 10.1D - Android Application](https://github.com/alice-tat/Task10_1D_ImprovedPersonalizedLearningExperiencesApp)
+This backend API **support the Android Application** at [TUT888/TopicTest-AndroidApp](https://github.com/TUT888/TopicTest-AndroidApp)
 
 ## Changes in this project
 After cloning previous project (Task 6.1D), some changes were added to this backend repository.
@@ -23,12 +21,12 @@ The application extended the AI-generated quizzes with AI profile summary featur
 
 ## How to run
 1. Clone this repo
-2. Create python virtual environment, activate it and installed required dependencies. For more information, refer to [Task 6.1D](https://github.com/alice-tat/Task6_1D_BackendAPI)
+2. Create python virtual environment, activate it and installed required dependencies. For more information, refer to [alice-tat/Task 6.1D](https://github.com/alice-tat/Task6_1D_BackendAPI)
 3. Install new dependency:
     ```
     pip install Flask-PyMongo
     ```
-4. Setup Mongo Atlas and get the connection URI. For mroe information, refer to [dgdeakin/DTask10_1_MongoDBAtlas](https://github.com/dgdeakin/DTask10_1_MongoDBAtlas)
+4. Setup Mongo Atlas and get the connection URI.
 3. Create `.env` file with following information
     ```
     API_TOKEN=<Your generated token>
